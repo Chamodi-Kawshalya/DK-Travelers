@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tours</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+
+</head>
+<body>
+
+<header>
+   <div class="logo-area">
+      <img src="images/logo.png" alt="DK Travelers Logo" class="logo">
+      <h2>DK Travelers</h2>
+   </div>
+
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tours.html">Tours</a>
+      <a href="destination.html">Destinations</a>
+      <a href="Galary.html">Gallery</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+   </nav>
+</header>
+
+<div class="hero" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429');">
+Our Tours
+</div>
+
+<section class="tours-section">
+    <h1>Our Tour Packages</h1>
+    <p>Explore the best tours and experiences across Sri Lanka</p>
+
+    <div class="tours-container">
+
+        <!-- Tour Package Example -->
+        <div class="tour-card">
+            <img src="images/istockphoto-522148349-612x612.jpg" alt="Colombo City Tour">
+            <h3>Colombo City Tour</h3>
+            <p>Duration: 1 Day | Price: $50</p>
+            <p>Discover the vibrant capital of Sri Lanka, visit historical sites, markets, and enjoy local cuisine.</p>
+            <button class="open-modal">Book Now</button>
+        </div>
+
+        <div class="tour-card">
+            <img src="images/0fba599c-61b8-4758-a4b3-e2183e151b30_halfday-kandy-city-tour-by-tuk-tuk (1).png" alt="Kandy Cultural Tour">
+            <h3>Kandy Cultural Tour</h3>
+            <p>Duration: 2 Days | Price: $120</p>
+            <p>Visit the Temple of the Tooth, explore scenic hills, and experience traditional Kandyan culture.</p>
+            <button class="open-modal">Book Now</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Book Your Tour</h2>
+        <form>
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+94xxxxxxxxx">
+
+            <label>Tour Name</label>
+            <input type="text" id="tourName" readonly>
+
+            <label>Message</label>
+            <textarea placeholder="Additional requests..." required></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+</div>
+
+
+<footer>
+<p>© 2026 DK Travelers – Sri Lanka</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#8cdaee;
+}
+
+/* HEADER */
+header{
+    background:#003566;
+    color:#d0f110;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+}
+
+.logo-area {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.logo {
+   width: 50px;   /* logo size */
+   height: auto;
+}
+
+
+header h2{
+    margin:0;
+    font-size:22px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#b1ee08;
+    text-decoration:none;
+    margin:8px 10px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    background-size:cover;
+    background-position:center;
+    height:280px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:rgb(225 245 232);
+    font-size:48px;
+    font-weight:bold;
+    text-align:center;
+    padding:20px;
+}
+
+/* SECTION */
+section{
+    background:rgb(4, 230, 162);
+    margin:15px;
+    padding:25px;
+    border-radius:8px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.grid img{
+    width:100%;
+    border-radius:8px;
+}
+
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    background:#003566;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    font-size:14px;
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    nav{
+        width:100%;
+        justify-content:center;
+    }
+
+    .hero{
+        height:200px;
+        font-size:22px;
+    }
+
+    section{
+        margin:10px;
+        padding:20px;
+    }
+    
+}
+/* ===== Contact Form Styles ===== */
+
+.contact-container{
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.contact-container label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Input & Textarea */
+.contact-container input,
+.contact-container textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Textarea height */
+.contact-container textarea{
+    height: 120px;
+    resize: none;
+}
+
+/* Submit button */
+.contact-container button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+.contact-container button:hover{
+    background-color: #00796b;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px){
+    .contact-container{
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+/* ===== FAQ Question Form Styles ===== */
+
+.faq-form-container{
+    max-width: 700px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.faq-form-container h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.faq-form-container p{
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.faq-form-container label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Inputs & textarea */
+.faq-form-container input,
+.faq-form-container textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Textarea height */
+.faq-form-container textarea{
+    height: 120px;
+    resize: none;
+}
+
+/* Submit button */
+.faq-form-container button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.faq-form-container button:hover{
+    background-color: #e68900;
+}
+
+/* Responsive */
+@media (max-width: 600px){
+    .faq-form-container{
+        margin: 20px;
+        padding: 20px;
+    }
+}
+/* ===== Gallery Section Styles ===== */
+
+.gallery-section{
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-section h1{
+    margin-bottom: 5px;
+}
+
+.gallery-section p{
+    color: #e43a10;
+    margin-bottom: 30px;
+}
+
+/* Gallery grid layout */
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* Gallery images */
+.gallery-container img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.gallery-container img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px){
+    .gallery-container img{
+        height: 180px;
+    }
+}
+/* ===== Modal Styles ===== */
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content{
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    position: relative;
+}
+
+.modal-content h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.modal-content label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal-content input,
+.modal-content textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal-content textarea{
+    height: 100px;
+    resize: none;
+}
+
+.modal-content button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #009688;
+    color: rgb(188, 240, 44);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover{
+    background-color: #00796b;
+}
+
+/* Close button */
+.close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
